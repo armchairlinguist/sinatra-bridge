@@ -25,7 +25,7 @@ end
 
 post '/log' do
  cross_origin
- request.params.console_log.each do |param|
+ request.params.console_logs.each do |param|
    logger.info(param)
  end
 end
