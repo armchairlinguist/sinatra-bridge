@@ -10,6 +10,7 @@ get '/' do
 end
 
 get '/log' do
+ cross_origin
  'This app accepts POST requests to /log from client-side apps. Try it!'
 end
 
