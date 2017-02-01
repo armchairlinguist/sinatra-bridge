@@ -22,4 +22,5 @@ end
 
 post '/log' do
  cross_origin
+ puts req.params
 end
