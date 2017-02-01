@@ -3,6 +3,7 @@ GEM
   specs:
     puma (3.6.2)
     rack (2.0.1)
+    rack-cors (0.4.0)
 
 PLATFORMS
   ruby
@@ -10,6 +11,7 @@ PLATFORMS
 DEPENDENCIES
   puma
   rack
+  rack-cors
 
 RUBY VERSION
    ruby 2.4.0p0
