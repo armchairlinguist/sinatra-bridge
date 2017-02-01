@@ -3,7 +3,11 @@ class Logger
     req = Rack::Request.new(env)
     case req.path_info
     when /log/
-      [200, {"Content-Type" => "text/html"}, ["Logged the thing."]]
+      if req.options?
+       [200]
+      else
+        [200, {"Content-Type" => "text/html"}, ["Logged the thing."]]
+      end
     else
       [404, {"Content-Type" => "text/html"}, ["Try logging a thing."]]
     end
