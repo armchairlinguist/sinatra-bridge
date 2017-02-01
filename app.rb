@@ -22,5 +22,5 @@ end
 
 post '/log' do
  cross_origin
- puts request.params
+ logger.info request.params
 end
